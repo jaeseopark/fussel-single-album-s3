@@ -13,4 +13,8 @@ cp /input_org /input/album
 
 # TODO: do s3 stuff
 
-# TODO: print out static website address here
+url="http://blah.amazonaws.com"
+echo "URL: ${url}"
+
+qr_url="<img src='https://chart.googleapis.com/chart?cht=qr&chl=${url}%2F&chs=180x180&choe=UTF-8&chld=L|2' alt=''>"
+echo "QR Code Image: ${qr_url}"
